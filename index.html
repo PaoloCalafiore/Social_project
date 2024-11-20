@@ -1,291 +1,44 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bridge for Change - Home</title>
+    <title>Bridge for Change - Test</title>
     <style>
         body { font-family: 'Times New Roman', serif; margin: 0; padding: 0; color: #333; }
         nav {
-            background: url('https://images.unsplash.com/photo-1509021436665-8f07dbf5bf1d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDE0fHxpbmRpYSUyMHJ1cmFsJTIwc2Nob29sfGVufDB8fHx8MTY5NzI3MzM5Mw&ixlib=rb-4.0.3&q=80&w=1080') no-repeat center center;
-            background-size: cover;
+            background: lightblue;
             padding: 1rem;
             display: flex;
             align-items: center;
             justify-content: space-between;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
-        .company-name {
-            font-size: 1.5rem;
-            font-weight: bold;
-            color: white;
-            margin-left: 1rem;
-        }
         nav ul {
             list-style-type: none;
-            margin: 0;
-            padding: 0;
             display: flex;
             gap: 2rem;
         }
-        nav ul li {
-            display: inline;
-        }
         nav ul li a {
             text-decoration: none;
-            color: white; font-size: calc(1rem + 2pt);
+            color: white; 
             font-weight: bold;
-            transition: color 0.3s;
-        }
-        nav ul li a:hover {
-            color: #f1f1f1;
-        }
-        header {
-            background: url('https://images.unsplash.com/photo-1509021436665-8f07dbf5bf1d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDE0fHxpbmRpYSUyMHJ1cmFsJTIwc2Nob29sfGVufDB8fHx8MTY5NzI3MzM5Mw&ixlib=rb-4.0.3&q=80&w=1080') no-repeat center center; background-size: cover;
-            background-size: cover;
-            height: 70vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            text-align: center;
-            position: relative;
-        }
-        header::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.5);
-        }
-        header .header-content {
-            position: relative;
-            z-index: 1;
-        }
-        header h1 {
-            font-size: calc(3rem + 2pt);
-            margin-bottom: 1rem;
-        }
-        header p {
-            font-size: 1.5rem;
-            max-width: 600px;
-            margin: 0 auto;
-        }
-        main {
-            padding: 2rem;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-        .section {
-            margin-bottom: 3rem;
-        }
-        .section h2 {
-            font-size: 2rem;
-            color: #FF9933;
-            margin-bottom: 1rem;
-        }
-        .section p {
-            font-size: 1.2rem;
-            line-height: 1.5;
-        }
-        footer {
-            text-align: center;
-            background-color: black;
-            color: white;
-            padding: 1rem;
         }
     </style>
 </head>
 <body>
     <nav>
-        <div class="company-name">Bridge for Change</div>
+        <div>Bridge for Change</div>
         <ul>
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#surveys">Surveys</a></li>
-            <li><a href="#ngos">Partner NGOs</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contacts">Contacts</a></li>
-            <li><a href="#donate" style="font-size: 1.2rem; background-color: #ff5e57; color: white; padding: 0.5rem 1rem; border-radius: 5px;">Donate</a></li>
-            
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Donate</a></li>
         </ul>
     </nav>
 
     <header>
-        <div class="header-content">
-            <h1>Helping NGOs to Generate Greater Impact</h1>
-            <p>Empowering rural communities by bridging the gap between students and NGOs to foster positive educational outcomes.</p>
-        </div>
+        <h1>Debug Test: Welcome to Bridge for Change</h1>
+        <p>If you see this, the basic content is working.</p>
     </header>
-
-    <main>
-        <section id="about" class="section" style="background-color: #f9f9f9; padding: 2rem; border-radius: 10px;">
-            <div style="display: flex; gap: 2rem; align-items: center;">
-                <div style="flex: 1; text-align: center; display: flex; flex-direction: column; justify-content: center;">
-                    <h2 style="font-size: 2rem;">About Us</h2>
-                    <p style="margin-top: 1rem;">Bridge for Change is dedicated to empowering rural students by providing a voice to express their educational needs. Our mission is to connect students, parents, and teachers with local NGOs to improve the quality of education and generate meaningful change in the community.</p>
-                </div>
-                <div style="flex: 1; display: flex; flex-direction: column; gap: 2rem;">
-                        <!-- Mission Block -->
-                        <div style="background-color: #fff; padding: 2rem; border-radius: 10px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);">
-                            <div style="display: flex; align-items: center; margin-bottom: 1rem;">
-                                <img src='https://img.icons8.com/ios-filled/50/FF9933/target.png' alt='Mission Icon' style='width: 40px; height: 40px; margin-right: 1rem;'>
-                                <h3 style="font-size: 1.8rem;">Mission</h3>
-                            </div>
-                            <p>Our mission is to bridge the gap between rural communities and educational opportunities by empowering students and facilitating impactful NGO partnerships.</p>
-                        </div>
-                        <!-- Vision Block -->
-                        <div style="background-color: #fff; padding: 2rem; border-radius: 10px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);">
-                            <div style="display: flex; align-items: center; margin-bottom: 1rem;">
-                                <img src='https://img.icons8.com/ios-filled/50/FF9933/binoculars.png' alt='Vision Icon' style='width: 40px; height: 40px; margin-right: 1rem;'>
-                                <h3 style="font-size: 1.8rem;">Vision</h3>
-                            </div>
-                            <p>Our vision is to ensure every rural student has access to quality education and resources, fostering a future where every child can achieve their full potential.</p>
-                        </div>
-                    </div>
-                    
-                </div>
-            </div>
-        </section>
-
-        <section id="surveys" class="section" style="background-color: #eef7ff; padding: 2rem; border-radius: 10px;">
-    <h2>Surveys</h2>
-    <p>Please select your region, city, and school to participate in the survey and share your needs.</p>
-    <div style="display: flex; gap: 2rem;">
-        <!-- Left Column with Location and Problems Blocks -->
-        <div style="flex: 2; display: flex; flex-direction: column; gap: 2rem;">
-            <!-- Location Selection Block -->
-            <div style="background: #fff; padding: 2rem; border-radius: 10px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);">
-                <h3 style="font-size: 2rem; text-align: center;">Select Location</h3>
-                <form style="display: flex; flex-direction: column; gap: 1.5rem;">
-                    <label for="region" style='display: flex; align-items: center; font-size: 1.8rem;'><img src='https://img.icons8.com/ios-filled/50/FF9933/india-map.png' alt='Region Icon' style='width: 40px; height: 40px; margin-right: 1rem;'>Region:</label>
-                    <select id="region" name="region" required style="font-size: 1.2rem; padding: 0.5rem; border-radius: 5px;">
-                        <option value="north">North</option>
-                        <option value="south">South</option>
-                        <option value="east">East</option>
-                        <option value="west">West</option>
-                    </select>
-                    <label for="city" style='display: flex; align-items: center; font-size: 1.8rem;'><img src='https://img.icons8.com/ios-filled/50/000000/city.png' alt='City Icon' style='width: 40px; height: 40px; margin-right: 1rem;'>City:</label>
-                    <select id="city" name="city" required style="font-size: 1.2rem; padding: 0.5rem; border-radius: 5px;">
-                        <option value="city-a">City A</option>
-                        <option value="city-b">City B</option>
-                        <option value="city-c">City C</option>
-                    </select>
-                    <label for="school" style='display: flex; align-items: center; font-size: 1.8rem;'><img src='https://img.icons8.com/ios-filled/50/000000/school.png' alt='School Icon' style='width: 40px; height: 40px; margin-right: 1rem;'>School:</label>
-                    <select id="school" name="school" required style="font-size: 1.2rem; padding: 0.5rem; border-radius: 5px;">
-                        <option value="school-x">School X</option>
-                        <option value="school-y">School Y</option>
-                        <option value="school-z">School Z</option>
-                    </select>
-                </form>
-            </div>
-            <!-- Problem Selection and Comments Block -->
-            <div style="background: #fff; padding: 2rem; border-radius: 10px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);">
-                <h3 style="font-size: 2rem; text-align: center;">Identify Problems and Add Comments</h3>
-                <form>
-                    <label for="problem">Select Problem:</label>
-                    <select id="problem" name="problem" required>
-                        <option value="infrastructure">Infrastructure Issues</option>
-                        <option value="teacher-training">Teacher Training</option>
-                        <option value="learning-materials">Lack of Learning Materials</option>
-                        <option value="transport">Transport Difficulties</option>
-                    </select>
-                    <br><br>
-                    <label for="comments">Additional Comments:</label><br>
-                    <textarea id="comments" name="comments" rows="4" style="width: 100%; border-radius: 5px; padding: 0.5rem;"></textarea>
-                    <br><br>
-                    <button type="submit" style="background-color: #FF9933; color: white; padding: 1rem 2rem; border: none; border-radius: 5px; cursor: pointer; width: 100%; font-size: 1.2rem; display: flex; align-items: center; justify-content: center;"><img src='https://img.icons8.com/ios-filled/50/FFFFFF/vote.png' alt='Vote Icon' style='width: 24px; height: 24px; margin-right: 0.5rem;'> Submit</button>
-                </form>
-            </div>
-        </div>
-        <!-- Results Summary Table -->
-        <div style="flex: 1; min-width: 300px; background: #fff; padding: 2rem; border-radius: 10px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);">
-            <h3 style="font-size: 2rem; text-align: center;">Survey Results Summary</h3>
-            <table style="width: 100%; border-collapse: collapse;">
-                <thead>
-                    <tr>
-                        <th style="border-bottom: 2px solid #ddd; padding: 1rem; text-align: left;">Region</th>
-                        <th style="border-bottom: 2px solid #ddd; padding: 1rem; text-align: left;">City</th>
-                        <th style="border-bottom: 2px solid #ddd; padding: 1rem; text-align: left;">School</th>
-                        <th style="border-bottom: 2px solid #ddd; padding: 1rem; text-align: left;">Votes</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td style="padding: 1rem; border-bottom: 1px solid #ddd;">North</td>
-                        <td style="padding: 1rem; border-bottom: 1px solid #ddd;">City A</td>
-                        <td style="padding: 1rem; border-bottom: 1px solid #ddd;">School X</td>
-                        <td style="padding: 1rem; border-bottom: 1px solid #ddd;">50</td>
-                    </tr>
-                    <tr>
-                        <td style="padding: 1rem; border-bottom: 1px solid #ddd;">South</td>
-                        <td style="padding: 1rem; border-bottom: 1px solid #ddd;">City B</td>
-                        <td style="padding: 1rem; border-bottom: 1px solid #ddd;">School Y</td>
-                        <td style="padding: 1rem; border-bottom: 1px solid #ddd;">30</td>
-                    </tr>
-                    <tr>
-                        <td style="padding: 1rem; border-bottom: 1px solid #ddd;">East</td>
-                        <td style="padding: 1rem; border-bottom: 1px solid #ddd;">City C</td>
-                        <td style="padding: 1rem; border-bottom: 1px solid #ddd;">School Z</td>
-                        <td style="padding: 1rem; border-bottom: 1px solid #ddd;">40</td>
-                    </tr>
-                </tbody>
-            </table>
-            <div style="margin-top: 2rem;">
-                <canvas id="surveyChart" width="400" height="400"></canvas>
-            </div>
-        </div>
-        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-        <script>
-            const ctx = document.getElementById('surveyChart').getContext('2d');
-            const surveyChart = new Chart(ctx, {
-                type: 'pie',
-                data: {
-                    labels: ['North - City A - School X', 'South - City B - School Y', 'East - City C - School Z'],
-                    datasets: [{
-                        label: 'Votes',
-                        data: [50, 30, 40],
-                        backgroundColor: ['#FF6384', '#36A2EB', '#FFCE56'],
-                    }]
-                },
-                options: {
-                    responsive: true,
-                    plugins: {
-                        legend: {
-                            position: 'top',
-                        },
-                    }
-                }
-            });
-        </script>
-    </div>
-    </div>
-    </div>
-</section>
-
-        <section id="ngos" class="section" style="background-color: #f9f4f4; padding: 2rem; border-radius: 10px;">
-            <h2>Partner NGOs</h2>
-            <p>We collaborate with various NGOs that are committed to improving educational standards and providing essential resources to rural schools. Together, we work towards a better future for our children.</p>
-        </section>
-
-        <section id="projects" class="section" style="background-color: #f4f9f4; padding: 2rem; border-radius: 10px;">
-            <h2>Projects</h2>
-            <p>Our projects focus on infrastructure development, educational resources, teacher training, and student support programs aimed at enhancing the overall learning experience in rural areas.</p>
-        </section>
-
-        <section id="contacts" class="section" style="background-color: #f9f9f4; padding: 2rem; border-radius: 10px;">
-            <h2>Contacts</h2>
-            <p>Reach out to us for more information or if you wish to collaborate in making a difference. We are always looking for partners who share our vision of quality education for all.</p>
-        </section>
-
-        <section id="donate" class="section" style="background-color: #fff4e5; padding: 2rem; border-radius: 10px;">
-            <h2>Donate</h2>
-            <p>Your contributions can help us make a bigger impact. Donate today to support educational initiatives that transform the lives of students in rural communities.</p>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2024 Student Voice Platform. All Rights Reserved.</p>
-    </footer>
 </body>
 </html>
